@@ -4,7 +4,19 @@ export type Accent = { hex: string; grad: string };
 export type Screen = "connect" | "editor";
 export type Conn = "idle" | "scan" | "found" | "pairing" | "on";
 export type FontSize = "S" | "M" | "L";
-export type FontFamily = "condensed" | "grotesk" | "mono" | "display" | "script" | "helvetica" | "arial" | "times" | "georgia" | "verdana" | "courier";
+export type FontFamily =
+  | "condensed"
+  | "grotesk"
+  | "mono"
+  | "display"
+  | "script"
+  | "helvetica"
+  | "arial"
+  | "times"
+  | "georgia"
+  | "verdana"
+  | "courier";
+export type Align = "left" | "center" | "right";
 export type TapeId = "white" | "clear" | "yellow" | "red" | "green" | "blue" | "silver";
 export type Mode = "text" | "barcode";
 export type PrintStage = "rasterizing" | "sending" | "result";
