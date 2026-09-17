@@ -48,7 +48,19 @@ export const TAPES: Record<TapeId, Tape> = {
 /** Printable glyphs that prepend to line 1. "" = none (shown as ∅). */
 export const ICONS = ["", "★", "♥", "✓", "→", "●", "⚡", "☂", "✿", "✱"];
 
-export const FONT_ORDER: FontFamily[] = ["condensed", "grotesk", "mono", "display", "script"];
+export const FONT_ORDER: FontFamily[] = [
+  "condensed",
+  "grotesk",
+  "mono",
+  "display",
+  "script",
+  "helvetica",
+  "arial",
+  "times",
+  "georgia",
+  "verdana",
+  "courier",
+];
 
 export const FONTS: Record<FontFamily, { label: string; stack: string }> = {
   condensed: { label: "Condensed", stack: "'Oswald','Arial Narrow','Roboto Condensed',sans-serif" },
@@ -56,6 +68,12 @@ export const FONTS: Record<FontFamily, { label: string; stack: string }> = {
   mono: { label: "Mono", stack: "'JetBrains Mono',ui-monospace,Menlo,monospace" },
   display: { label: "Display", stack: "'Anton','Arial Narrow',sans-serif" },
   script: { label: "Script", stack: "'Caveat',ui-rounded,cursive" },
+  helvetica: { label: "Helvetica", stack: "'Helvetica Neue',Helvetica,sans-serif" },
+  arial: { label: "Arial", stack: "Arial,Helvetica,sans-serif" },
+  times: { label: "Times", stack: "'Times New Roman',Times,serif" },
+  georgia: { label: "Georgia", stack: "Georgia,'Times New Roman',serif" },
+  verdana: { label: "Verdana", stack: "Verdana,Geneva,sans-serif" },
+  courier: { label: "Courier", stack: "'Courier New',Courier,monospace" },
 };
 
 export interface Template {
